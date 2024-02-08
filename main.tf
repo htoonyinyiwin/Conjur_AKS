@@ -21,6 +21,7 @@ resource "azurerm_resource_group" "conjur-rg" {
   }
 }
 
+#................................AKS Clusters.....................................
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "ConjurAKS"
   location            = azurerm_resource_group.conjur-rg.location
@@ -37,3 +38,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     type = "SystemAssigned"
   }
 }
+
+#................................AKS.....................................
+#................................AKS.....................................
+#................................AKS.....................................
